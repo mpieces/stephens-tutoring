@@ -5,7 +5,7 @@ Rails.application.configure do
   config.cache_classes = true
 
   config.action_mailer.raise_delivery_errors = true
-  config.action_mailer.delivery_method = :test
+  config.action_mailer.delivery_method = :production
   host = 'https://murmuring-castle-71999.herokuapp.com/'
   config.action_mailer.default_url_options = { host: host }
   # Eager load code on boot. This eager loads most of Rails and
