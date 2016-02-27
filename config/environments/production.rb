@@ -6,10 +6,19 @@ Rails.application.configure do
 
   config.action_mailer.raise_delivery_errors = true
   config.action_mailer.delivery_method = :smtp
-  host = 'murmuring-castle-71999.herokuapp.com/'
+  host = 'www.ramonstutoring.com'
   config.action_mailer.default_url_options = { host: host }
 
   config.action_mailer.perform_deliveries = true
+
+  config.action_mailer.smtp_settings = {
+    :address => "smtp.gmail.com",
+    :port => 587,
+    :user_name => ENV['sgr2ak'],
+    :password => ENV['Not.bor9'],
+    :authentication => "plain",
+    :enable_starttls_auto => true
+  }
   # Eager load code on boot. This eager loads most of Rails and
   # your application in memory, allowing both threaded web servers
   # and those relying on copy on write to perform better.
