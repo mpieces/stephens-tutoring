@@ -143,6 +143,11 @@ body {
 }
 
 
+// #home-buttons {
+//   font-family: "Raleway", sans-serif;
+//   color: #4c4c4c;
+// }
+
 ul, li, p {
   font-family: "Raleway", sans-serif;
   color: #4c4c4c;
@@ -199,6 +204,7 @@ hr {
 
 .register-buttons a {
   text-decoration: none;
+  color: #4c4c4c;
   font-family: "Raleway", sans-serif;
   font-size: 2rem;
   border: 3px solid #6e5baa;
@@ -214,11 +220,10 @@ hr {
 }
 
 #login {
-  margin-right: 30px;
+  margin-right: 50px;
 }
 
-
-
+// HOW IT WORKS PAGE:
 #howitworks {
   margin: 0 auto;
   padding-top: 20px;
@@ -230,6 +235,7 @@ hr {
   text-align: left;
 }
 
+// BOOK SESSION BUTTON:
 #book h1 {
   color: #6e5baa;
   position: absolute;
@@ -247,18 +253,13 @@ hr {
   color: white;
 }
 
-/*#calendar {
-  position: absolute;
-  top: 300px;
-  right: 25%;
-  left: 25%;
-}*/
-
+// CONTACT PAGE:
 #contact {
   text-align: center;
   padding-top: 20px;
 }
 
+// SUBJECTS TAUGHT PAGE:
 .subjects {
   width: 500px;
   display: block;
@@ -273,6 +274,7 @@ hr {
     list-style-type: none;
 }
 
+// ABOUT ME PAGE:
 #about {
   padding-top: 20px;
   text-align: center;
@@ -282,7 +284,7 @@ hr {
 
 }
 
-/*FORMs: */
+/*FORMS: */
 .form {
   padding-top: 20px;
   margin: 0 auto;
@@ -304,7 +306,8 @@ input, textarea {
   cursor: auto;
   border-radius: 10px;
 }
-/* Keep:*/
+
+// ERROR & NOTIFICATION FORMATTING:
 #error_explanation {
   color: red;
   ul {
@@ -335,8 +338,7 @@ input, textarea {
   text-align: left;
 }
 
-/*Users index: */
-
+// USERS INDEX PAGE: (ADMIN ACCESS ONLY):
 .users {
   list-style: none;
   margin: 0;
