@@ -1,9 +1,9 @@
 
 <% if !signed_in? %>
-<div class="register-buttons">
-      <%= link_to "Log In", signin_path, id: 'login' %>
-      <%= link_to "Sign Up", signup_path, id: 'signup' %>
-</div>
+  <div class="register-buttons">
+        <%= link_to "Log In", signin_path, id: 'login' %>
+        <%= link_to "Sign Up", signup_path %>
+  </div>
 <% end %>
 
 

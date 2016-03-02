@@ -14,11 +14,16 @@ class UsersController < ApplicationController
   def create
     @user = User.new(user_params)
     if @user.save
-      sign_in @user    # added after sessions created
-      flash[:success] = "Welcome #{@user.first_name}!"
-      redirect_to @user
+      @user.send_activation_email # helper method from User model
+      flash[:info] = "Please check your email to activate your account."
+      redirect_to root_url
     else
       render 'new'
+    #   sign_in @user    # added after sessions created
+    #   flash[:success] = "Welcome #{@user.first_name}!"
+    #   redirect_to @user
+    # else
+    #   render 'new'
     end
   end
 
