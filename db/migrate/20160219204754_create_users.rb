@@ -8,7 +8,7 @@ class CreateUsers < ActiveRecord::Migration
       t.string :address
       t.string :city
       t.string :zip
-      t.foreign_key :year_id
+
 
       t.timestamps null: false
     end
